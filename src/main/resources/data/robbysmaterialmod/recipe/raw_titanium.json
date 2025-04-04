@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "robbysmaterialmod:raw_titanium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "robbysmaterialmod:raw_titanium"
+  }
+}

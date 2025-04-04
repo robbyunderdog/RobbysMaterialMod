@@ -32,6 +32,8 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ROBBYSMATERIAL_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.robbysmaterialmod.robbysmaterial_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.TITANIUM_ORE.get());
+                        output.accept(ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RAW_TITANIUM_BLOCK.get());
                         output.accept(ModBlocks.TITANIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_ALUMINUM_BLOCK.get());
