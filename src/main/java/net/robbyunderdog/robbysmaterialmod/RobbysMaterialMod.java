@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -33,7 +34,7 @@ public class RobbysMaterialMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +51,10 @@ public class RobbysMaterialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_TITANIUM);
             event.accept(ModItems.TITANIUM_INGOT);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.RAW_TITANIUM_BLOCK);
+            event.accept(ModBlocks.TITANIUM_BLOCK);
         }
     }
 

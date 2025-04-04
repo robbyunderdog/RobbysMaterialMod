@@ -1,4 +1,8 @@
 {
   "item.robbysmaterialmod.raw_titanium": "Raw Titanium",
-  "item.robbysmaterialmod.titanium_ingot": "Titanium Ingot"
+  "item.robbysmaterialmod.titanium_ingot": "Titanium Ingot",
+
+
+  "block.robbysmaterialmod.raw_titanium_block": "Block of Raw Titanium",
+  "block.robbysmaterialmod.titanium_block": "Block of Titanium"
 }
