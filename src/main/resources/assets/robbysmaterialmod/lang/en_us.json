@@ -4,5 +4,9 @@
 
 
   "block.robbysmaterialmod.raw_titanium_block": "Block of Raw Titanium",
-  "block.robbysmaterialmod.titanium_block": "Block of Titanium"
+  "block.robbysmaterialmod.titanium_block": "Block of Titanium",
+
+
+  "creativetab.robbysmaterialmod.robbysmaterial_items": "Robby's Materials Items",
+  "creativetab.robbysmaterialmod.robbysmaterial_blocks": "Robby's Materials Blocks"
 }
