@@ -3,11 +3,15 @@
   "item.robbysmaterialmod.titanium_ingot": "Titanium Ingot",
   "item.robbysmaterialmod.raw_aluminum": "Raw Aluminum",
   "item.robbysmaterialmod.aluminum_ingot": "Aluminum Ingot",
+  "item.robbysmaterialmod.raw_silver": "Raw Silver",
+  "item.robbysmaterialmod.silver_ingot": "Silver Ingot",
 
   "block.robbysmaterialmod.raw_titanium_block": "Block of Raw Titanium",
   "block.robbysmaterialmod.titanium_block": "Block of Titanium",
   "block.robbysmaterialmod.raw_aluminum_block": "Block of Raw Aluminum",
   "block.robbysmaterialmod.aluminum_block": "Block of Aluminum",
+  "block.robbysmaterialmod.raw_silver_block": "Block of Raw Silver",
+  "block.robbysmaterialmod.silver_block": "Block of Silver",
 
   "creativetab.robbysmaterialmod.robbysmaterial_items": "Robby's Materials Items",
   "creativetab.robbysmaterialmod.robbysmaterial_blocks": "Robby's Materials Blocks"
