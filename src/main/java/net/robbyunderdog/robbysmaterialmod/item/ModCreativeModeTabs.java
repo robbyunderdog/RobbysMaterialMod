@@ -20,6 +20,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_TITANIUM.get());
                         output.accept(ModItems.TITANIUM_INGOT.get());
+                        output.accept(ModItems.RAW_ALUMINUM.get());
+                        output.accept(ModItems.ALUMINUM_INGOT.get());
 
                     }).build());
 
@@ -30,6 +32,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.RAW_TITANIUM_BLOCK.get());
                         output.accept(ModBlocks.TITANIUM_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ALUMINUM_BLOCK.get());
+                        output.accept(ModBlocks.ALUMINUM_BLOCK.get());
 
                     }).build());
 
