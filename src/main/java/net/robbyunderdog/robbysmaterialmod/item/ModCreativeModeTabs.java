@@ -21,12 +21,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_TITANIUM.get());
                         output.accept(ModItems.TITANIUM_INGOT.get());
 
-                        output.accept(ModItems.RAW_ALUMINUM.get());
-                        output.accept(ModItems.ALUMINUM_INGOT.get());
-
-                        output.accept(ModItems.RAW_SILVER.get());
-                        output.accept(ModItems.SILVER_INGOT.get());
-
                         output.accept(ModItems.TITANIUM_CHISEL.get());
 
                     }).build());
@@ -40,14 +34,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RAW_TITANIUM_BLOCK.get());
                         output.accept(ModBlocks.TITANIUM_BLOCK.get());
-
-                        output.accept(ModBlocks.RAW_ALUMINUM_BLOCK.get());
-                        output.accept(ModBlocks.ALUMINUM_BLOCK.get());
-
-                        output.accept(ModBlocks.SILVER_ORE.get());
-                        output.accept(ModBlocks.SILVER_DEEPSLATE_ORE.get());
-                        output.accept(ModBlocks.RAW_SILVER_BLOCK.get());
-                        output.accept(ModBlocks.SILVER_BLOCK.get());
 
                     }).build());
 
