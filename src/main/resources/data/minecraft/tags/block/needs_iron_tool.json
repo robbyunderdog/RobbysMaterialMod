@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
-    "robbysmaterialmod:raw_titanium_block",
-    "robbysmaterialmod:titanium_block"
+    "robbysmaterialmod:raw_silver_block",
+    "robbysmaterialmod:silver_block",
+    "robbysmaterialmod:silver_ore",
+    "robbysmaterialmod:silver_deepslate_ore"
   ]
 }
