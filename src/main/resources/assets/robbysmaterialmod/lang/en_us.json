@@ -28,6 +28,9 @@
   "block.robbysmaterialmod.titanium_lamp": "Titanium Lamp",
 
 
+  "tooltip.robbysmaterialmod.chisel.shift_down": "This Item changes certain Blocks",
+  "tooltip.robbysmaterialmod.chisel": "Press §eShift§r for more Information",
+
 
   "creativetab.robbysmaterialmod.robbysmaterial_items": "Robby's Materials Items",
   "creativetab.robbysmaterialmod.robbysmaterial_blocks": "Robby's Materials Blocks"
