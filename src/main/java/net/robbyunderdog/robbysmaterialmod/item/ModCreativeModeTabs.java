@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.TITANIUM_CHISEL.get());
 
+                        output.accept(ModItems.PHILLY_CHEESESTEAK.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ROBBYSMATERIAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("robbysmaterial_blocks_tab",
