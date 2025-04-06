@@ -9,10 +9,23 @@
   "item.robbysmaterialmod.philly_cheesesteak": "Philly Cheesesteak",
 
 
+  "item.robbysmaterialmod.organic_fuel": "Organic Fuel",
+
+
   "block.robbysmaterialmod.titanium_ore": "Titanium Ore",
   "block.robbysmaterialmod.titanium_deepslate_ore": "Deepslate Titanium Ore",
   "block.robbysmaterialmod.raw_titanium_block": "Block of Raw Titanium",
   "block.robbysmaterialmod.titanium_block": "Block of Titanium",
+  "block.robbysmaterialmod.titanium_stairs": "Titanium Stairs",
+  "block.robbysmaterialmod.titanium_slab": "Titanium Slab",
+  "block.robbysmaterialmod.titanium_pressure_plate": "Titanium Pressure Plate",
+  "block.robbysmaterialmod.titanium_button": "Titanium Button",
+  "block.robbysmaterialmod.titanium_fence": "Titanium Fence",
+  "block.robbysmaterialmod.titanium_fence_gate": "Titanium Fence Gate",
+  "block.robbysmaterialmod.titanium_wall": "Titanium Wall",
+  "block.robbysmaterialmod.titanium_door": "Titanium Door",
+  "block.robbysmaterialmod.titanium_trapdoor": "Titanium Trapdoor",
+
 
 
   "creativetab.robbysmaterialmod.robbysmaterial_items": "Robby's Materials Items",

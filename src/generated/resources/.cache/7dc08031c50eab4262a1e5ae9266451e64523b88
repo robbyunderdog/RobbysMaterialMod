@@ -1,0 +1,7 @@
+// 1.21	2025-04-05T22:37:13.5020312	Tags for minecraft:block mod id robbysmaterialmod
+ca9815fd8a5b69debd03fb0bf33005cf9abb10de data/minecraft/tags/block/fences.json
+09e74fedccb02cdf1ad7478e67411da8fa8b939a data/minecraft/tags/block/fence_gates.json
+a3a9cb2cd438c6fddf4e6b0ff4f41b9b42c97467 data/minecraft/tags/block/mineable/pickaxe.json
+a3a9cb2cd438c6fddf4e6b0ff4f41b9b42c97467 data/minecraft/tags/block/needs_diamond_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
+c3ef63081d512a73bb0a39d66a38dee7a73f9c91 data/minecraft/tags/block/walls.json

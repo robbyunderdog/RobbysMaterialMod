@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "robbysmaterialmod:block/titanium_slab"
+    },
+    "type=double": {
+      "model": "robbysmaterialmod:block/titanium_block"
+    },
+    "type=top": {
+      "model": "robbysmaterialmod:block/titanium_slab_top"
+    }
+  }
+}

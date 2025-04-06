@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "robbysmaterialmod:block/titanium_block"
+  }
+}

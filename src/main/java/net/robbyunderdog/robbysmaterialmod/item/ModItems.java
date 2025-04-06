@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.item.custom.ChiselItem;
+import net.robbyunderdog.robbysmaterialmod.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RobbysMaterialMod.MOD_ID);
@@ -20,6 +21,9 @@ public class ModItems {
 
     // FOOD
     public static final RegistryObject<Item> PHILLY_CHEESESTEAK = ITEMS.register("philly_cheesesteak", () -> new Item(new Item.Properties().food(ModFoodProperties.PHILLY_CHEESESTEAK)));
+
+    // FUEL
+    public static final RegistryObject<Item> ORGANIC_FUEL = ITEMS.register("organic_fuel", () -> new FuelItem(new Item.Properties(), 1600));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

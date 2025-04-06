@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "titanium",
+  "ingredients": [
+    {
+      "item": "robbysmaterialmod:titanium_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "robbysmaterialmod:titanium_button"
+  }
+}

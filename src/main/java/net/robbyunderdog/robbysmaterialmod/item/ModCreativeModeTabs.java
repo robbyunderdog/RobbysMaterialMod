@@ -18,12 +18,18 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TITANIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.robbysmaterialmod.robbysmaterial_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        // BASIC ITEMS
                         output.accept(ModItems.RAW_TITANIUM.get());
                         output.accept(ModItems.TITANIUM_INGOT.get());
 
+                        // TOOLS
                         output.accept(ModItems.TITANIUM_CHISEL.get());
 
+                        // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());
+
+                        // FUEL
+                        output.accept(ModItems.ORGANIC_FUEL.get());
 
                     }).build());
 
@@ -32,10 +38,22 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ROBBYSMATERIAL_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.robbysmaterialmod.robbysmaterial_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //ORES AND RAW BLOCKS
                         output.accept(ModBlocks.TITANIUM_ORE.get());
                         output.accept(ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RAW_TITANIUM_BLOCK.get());
+
+                        // TITANIUM BLOCK BLOCKS
                         output.accept(ModBlocks.TITANIUM_BLOCK.get());
+                        output.accept(ModBlocks.TITANIUM_STAIRS.get());
+                        output.accept(ModBlocks.TITANIUM_SLAB.get());
+                        output.accept(ModBlocks.TITANIUM_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.TITANIUM_BUTTON.get());
+                        output.accept(ModBlocks.TITANIUM_FENCE.get());
+                        output.accept(ModBlocks.TITANIUM_FENCE_GATE.get());
+                        output.accept(ModBlocks.TITANIUM_WALL.get());
+                        output.accept(ModBlocks.TITANIUM_DOOR.get());
+                        output.accept(ModBlocks.TITANIUM_TRAPDOOR.get());
 
                     }).build());
 

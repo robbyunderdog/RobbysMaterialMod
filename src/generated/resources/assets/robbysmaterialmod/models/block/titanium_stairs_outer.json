@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "robbysmaterialmod:block/titanium_block",
+    "side": "robbysmaterialmod:block/titanium_block",
+    "top": "robbysmaterialmod:block/titanium_block"
+  }
+}

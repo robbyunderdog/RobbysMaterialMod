@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "titanium",
+  "key": {
+    "#": {
+      "item": "robbysmaterialmod:titanium_ingot"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "robbysmaterialmod:titanium_stairs"
+  }
+}
