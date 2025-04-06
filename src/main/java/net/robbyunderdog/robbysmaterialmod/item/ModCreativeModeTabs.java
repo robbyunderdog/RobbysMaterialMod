@@ -31,6 +31,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TITANIUM_HOE.get());
                         output.accept(ModItems.TITANIUM_HAMMER.get());
 
+                        // ARMOR
+                        output.accept(ModItems.TITANIUM_HELMET.get());
+                        output.accept(ModItems.TITANIUM_CHESTPLATE.get());
+                        output.accept(ModItems.TITANIUM_LEGGINGS.get());
+                        output.accept(ModItems.TITANIUM_BOOTS.get());
+
                         // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());
 
