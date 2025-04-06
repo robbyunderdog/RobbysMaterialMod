@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "robbysmaterialmod:titanium_block"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "robbysmaterialmod:titanium_hammer"
+  }
+}

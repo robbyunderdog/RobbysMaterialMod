@@ -32,6 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TITANIUM_AXE);
         handheldItem(ModItems.TITANIUM_SHOVEL);
         handheldItem(ModItems.TITANIUM_HOE);
+        handheldItem(ModItems.TITANIUM_HAMMER);
 
         // FOOD
         basicItem(ModItems.PHILLY_CHEESESTEAK.get());

@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.item.custom.ChiselItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.FuelItem;
+import net.robbyunderdog.robbysmaterialmod.item.custom.HammerItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RobbysMaterialMod.MOD_ID);
@@ -46,6 +47,9 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe",
             () -> new HoeItem(ModToolTiers.TITANIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.TITANIUM, 0, -3.0f))));
+    public static final RegistryObject<Item> TITANIUM_HAMMER = ITEMS.register("titanium_hammer",
+            () -> new HammerItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 7, -3.6f))));
 
 
     public static void register(IEventBus eventBus) {

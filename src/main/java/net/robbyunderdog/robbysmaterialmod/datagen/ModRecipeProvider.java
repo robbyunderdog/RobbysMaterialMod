@@ -117,6 +117,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern(" B ")
                 .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM HAMMER
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_HAMMER.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern(" B ")
+                .define('A', ModBlocks.TITANIUM_BLOCK.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.TITANIUM_BLOCK.get()), has(ModBlocks.TITANIUM_BLOCK.get())).save(pRecipeOutput);
 
     // BASIC ITEMS
             // TITANIUM INGOT
