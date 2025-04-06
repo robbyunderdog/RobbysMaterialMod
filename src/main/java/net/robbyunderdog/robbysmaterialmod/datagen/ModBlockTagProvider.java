@@ -8,6 +8,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
+import net.robbyunderdog.robbysmaterialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,10 +32,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         // NEEDS DIAMOND TOOL
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RAW_TITANIUM_BLOCK.get())
-                .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE.get())
                 .add(ModBlocks.TITANIUM_ORE.get());
+
+        // NEEDS TITANIUM TOOL
+        tag(ModTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .add(ModBlocks.RAW_TITANIUM_BLOCK.get())
+                .add(ModBlocks.TITANIUM_BLOCK.get())
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        // INCORRECT FOR TITANIUM TOOL
+        tag(ModTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_TITANIUM_TOOL);
 
         // FENCES
         tag(BlockTags.FENCES)
@@ -47,6 +57,5 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         // WALLS
         tag(BlockTags.WALLS)
                 .add(ModBlocks.TITANIUM_WALL.get());
-
     }
 }

@@ -1,0 +1,7 @@
+{
+  "values": [
+    "robbysmaterialmod:raw_titanium_block",
+    "robbysmaterialmod:titanium_block",
+    "#minecraft:needs_diamond_tool"
+  ]
+}

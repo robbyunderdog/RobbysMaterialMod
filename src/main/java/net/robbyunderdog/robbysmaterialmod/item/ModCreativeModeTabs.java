@@ -24,6 +24,11 @@ public class ModCreativeModeTabs {
 
                         // TOOLS
                         output.accept(ModItems.TITANIUM_CHISEL.get());
+                        output.accept(ModItems.TITANIUM_SWORD.get());
+                        output.accept(ModItems.TITANIUM_PICKAXE.get());
+                        output.accept(ModItems.TITANIUM_AXE.get());
+                        output.accept(ModItems.TITANIUM_SHOVEL.get());
+                        output.accept(ModItems.TITANIUM_HOE.get());
 
                         // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());

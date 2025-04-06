@@ -2,6 +2,7 @@ package net.robbyunderdog.robbysmaterialmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -26,6 +27,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // TOOLS
         basicItem(ModItems.TITANIUM_CHISEL.get());
+        handheldItem(ModItems.TITANIUM_SWORD);
+        handheldItem(ModItems.TITANIUM_PICKAXE);
+        handheldItem(ModItems.TITANIUM_AXE);
+        handheldItem(ModItems.TITANIUM_SHOVEL);
+        handheldItem(ModItems.TITANIUM_HOE);
 
         // FOOD
         basicItem(ModItems.PHILLY_CHEESESTEAK.get());
@@ -39,6 +45,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.TITANIUM_FENCE, ModBlocks.TITANIUM_BLOCK);
         wallItem(ModBlocks.TITANIUM_WALL, ModBlocks.TITANIUM_BLOCK);
         simpleBlockItem(ModBlocks.TITANIUM_DOOR);
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {

@@ -3,18 +3,19 @@
   "category": "equipment",
   "key": {
     "A": {
-      "item": "robbysmaterialmod:titanium_block"
+      "item": "robbysmaterialmod:titanium_ingot"
     },
     "B": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "A",
-    "B"
+    "AA ",
+    "AB ",
+    " B "
   ],
   "result": {
     "count": 1,
-    "id": "robbysmaterialmod:titanium_chisel"
+    "id": "robbysmaterialmod:titanium_axe"
   }
 }

@@ -1,27 +1,27 @@
-[06Apr2025 02:55:20.275] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rw513\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, robbysmaterialmod, --all, --output, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\generated\resources, --existing, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\main\resources]
-[06Apr2025 02:55:20.277] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
-[06Apr2025 02:55:20.278] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[06Apr2025 02:55:20.364] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[06Apr2025 02:55:20.434] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rw513/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[06Apr2025 02:55:21.187] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[06Apr2025 02:55:21.919] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rw513\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, robbysmaterialmod, --all, --output, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\generated\resources, --existing, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\main\resources]
-[06Apr2025 02:55:26.146] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[06Apr2025 02:55:26.146] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[06Apr2025 02:55:26.174] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[06Apr2025 02:55:26.654] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [robbysmaterialmod]
-[06Apr2025 02:55:26.710] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rw513/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[06Apr2025 02:55:26.710] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rw513/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[06Apr2025 02:55:26.848] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[06Apr2025 02:55:27.000] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 150 ms
-[06Apr2025 02:55:27.000] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[06Apr2025 02:55:27.046] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 46 ms
-[06Apr2025 02:55:27.046] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id robbysmaterialmod
-[06Apr2025 02:55:27.062] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id robbysmaterialmod finished after 16 ms
-[06Apr2025 02:55:27.063] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id robbysmaterialmod
-[06Apr2025 02:55:27.065] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id robbysmaterialmod finished after 2 ms
-[06Apr2025 02:55:27.065] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: robbysmaterialmod
-[06Apr2025 02:55:27.074] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: robbysmaterialmod finished after 8 ms
-[06Apr2025 02:55:27.074] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: robbysmaterialmod
-[06Apr2025 02:55:27.179] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: robbysmaterialmod finished after 104 ms
-[06Apr2025 02:55:27.179] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 331 ms
-[06Apr2025 02:55:27.186] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 131, old count: 131, new count: 132, removed stale: 0, written: 0
+[06Apr2025 03:49:38.738] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rw513\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, robbysmaterialmod, --all, --output, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\generated\resources, --existing, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\main\resources]
+[06Apr2025 03:49:38.740] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[06Apr2025 03:49:38.741] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[06Apr2025 03:49:38.814] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[06Apr2025 03:49:38.892] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rw513/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[06Apr2025 03:49:39.556] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[06Apr2025 03:49:40.174] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rw513\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, robbysmaterialmod, --all, --output, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\generated\resources, --existing, C:\Users\rw513\Documents\GitHub\RobbysMaterialMod\src\main\resources]
+[06Apr2025 03:49:44.006] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[06Apr2025 03:49:44.007] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[06Apr2025 03:49:44.032] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[06Apr2025 03:49:44.450] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [robbysmaterialmod]
+[06Apr2025 03:49:44.506] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rw513/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[06Apr2025 03:49:44.506] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rw513/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[06Apr2025 03:49:44.649] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[06Apr2025 03:49:44.795] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 145 ms
+[06Apr2025 03:49:44.796] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[06Apr2025 03:49:44.838] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 42 ms
+[06Apr2025 03:49:44.838] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id robbysmaterialmod
+[06Apr2025 03:49:44.865] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id robbysmaterialmod finished after 26 ms
+[06Apr2025 03:49:44.865] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id robbysmaterialmod
+[06Apr2025 03:49:44.867] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id robbysmaterialmod finished after 2 ms
+[06Apr2025 03:49:44.867] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: robbysmaterialmod
+[06Apr2025 03:49:44.879] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: robbysmaterialmod finished after 11 ms
+[06Apr2025 03:49:44.879] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: robbysmaterialmod
+[06Apr2025 03:49:44.999] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: robbysmaterialmod finished after 120 ms
+[06Apr2025 03:49:44.999] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 350 ms
+[06Apr2025 03:49:45.011] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 151, old count: 131, new count: 149, removed stale: 3, written: 24

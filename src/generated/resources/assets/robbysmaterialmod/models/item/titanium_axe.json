@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "robbysmaterialmod:item/titanium_axe"
+  }
+}

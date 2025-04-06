@@ -1,10 +1,15 @@
-// 1.21	2025-04-05T23:34:57.5601416	Item Models: robbysmaterialmod
+// 1.21	2025-04-06T03:49:45.0036302	Item Models: robbysmaterialmod
 a645d30a8afd2c16f0b44664b16dfd4ef66bde2a assets/robbysmaterialmod/models/item/organic_fuel.json
 6f0c8840a04e4a163f2c5a8912d5873dd4d9cc6c assets/robbysmaterialmod/models/item/philly_cheesesteak.json
 8309d30278e3cbdfed50118df30f3a5a08995241 assets/robbysmaterialmod/models/item/raw_titanium.json
+2c5b2b7ec9ead8c80a2d7d702289f75fabb1dec0 assets/robbysmaterialmod/models/item/titanium_axe.json
 21129d22491444fb21f05e836a2c063073aedaee assets/robbysmaterialmod/models/item/titanium_button.json
 fa98bf98dd59c3384a253e71b15217aaeb653ffb assets/robbysmaterialmod/models/item/titanium_chisel.json
 0681940abb3b8cc63bd14007becd362e1e2224ad assets/robbysmaterialmod/models/item/titanium_door.json
 c664725dc62d0c347cf4551ce955288154bcc026 assets/robbysmaterialmod/models/item/titanium_fence.json
+21ed961c6a2e41f10ec2092c5eef7315e7476f8e assets/robbysmaterialmod/models/item/titanium_hoe.json
 322701e94e4d73f203e8d2f0ddba6ff6dfa6367a assets/robbysmaterialmod/models/item/titanium_ingot.json
+59c3e8a0242848e4a3c5adf131f86d388d8691f2 assets/robbysmaterialmod/models/item/titanium_pickaxe.json
+709b3b2e4ed7b934a2a1880d083f00ad6752b728 assets/robbysmaterialmod/models/item/titanium_shovel.json
+877ba3f647c5ee79aa08b84cb2611052bc7c4309 assets/robbysmaterialmod/models/item/titanium_sword.json
 f05551c54c865bc37016b6742f4252723b1e9341 assets/robbysmaterialmod/models/item/titanium_wall.json

@@ -28,14 +28,14 @@ public class ModRecipeProvider extends RecipeProvider {
 
     // TITANIUM BLOCKS
             // TITANIUM BLOCK
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TITANIUM_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITANIUM_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.TITANIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
             // RAW TITANIUM BLOCK
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_TITANIUM_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_TITANIUM_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
@@ -77,11 +77,46 @@ public class ModRecipeProvider extends RecipeProvider {
 
     // TOOLS
             // TITANIUM CHISEL
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TITANIUM_CHISEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_CHISEL.get())
                 .pattern("A")
                 .pattern("B")
                 .define('A', ModBlocks.TITANIUM_BLOCK.get()).define('B', Items.STICK)
                 .unlockedBy(getHasName(ModBlocks.TITANIUM_BLOCK.get()), has(ModBlocks.TITANIUM_BLOCK.get())).save(pRecipeOutput);
+            // TITANIUM SWORD
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TITANIUM_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM PICKAXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM AXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_AXE.get())
+                .pattern("AA ")
+                .pattern("AB ")
+                .pattern(" B ")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM SHOVEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_SHOVEL.get())
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM HOE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_HOE.get())
+                .pattern("AA ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
 
     // BASIC ITEMS
             // TITANIUM INGOT
