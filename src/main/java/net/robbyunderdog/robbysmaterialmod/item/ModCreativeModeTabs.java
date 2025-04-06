@@ -54,6 +54,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TITANIUM_WALL.get());
                         output.accept(ModBlocks.TITANIUM_DOOR.get());
                         output.accept(ModBlocks.TITANIUM_TRAPDOOR.get());
+                        output.accept(ModBlocks.TITANIUM_LAMP.get());
 
                     }).build());
 

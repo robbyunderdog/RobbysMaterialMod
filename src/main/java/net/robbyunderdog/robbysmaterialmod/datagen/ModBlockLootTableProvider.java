@@ -41,6 +41,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TITANIUM_FENCE_GATE.get());
         dropSelf(ModBlocks.TITANIUM_WALL.get());
         dropSelf(ModBlocks.TITANIUM_TRAPDOOR.get());
+        dropSelf(ModBlocks.TITANIUM_LAMP.get());
         this.add(ModBlocks.TITANIUM_SLAB.get(), block -> createSlabItemTable(ModBlocks.TITANIUM_SLAB.get()));
         this.add(ModBlocks.TITANIUM_DOOR.get(), block -> createDoorTable(ModBlocks.TITANIUM_DOOR.get()));
     }

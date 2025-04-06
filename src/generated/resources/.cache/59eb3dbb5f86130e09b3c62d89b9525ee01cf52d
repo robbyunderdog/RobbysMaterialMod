@@ -1,4 +1,4 @@
-// 1.21	2025-04-05T22:37:13.5033871	Loot Tables
+// 1.21	2025-04-06T02:15:46.5546735	Loot Tables
 07484f4e19476027b68751aabbc9814b8f8346a5 data/robbysmaterialmod/loot_table/blocks/raw_titanium_block.json
 cec8b0da4c771d3ab14e746a8cc6b7315f0f1f44 data/robbysmaterialmod/loot_table/blocks/titanium_block.json
 7cafb1f0e1cd7fbde755dbd65f610cf201781157 data/robbysmaterialmod/loot_table/blocks/titanium_button.json
@@ -6,6 +6,7 @@ cec8b0da4c771d3ab14e746a8cc6b7315f0f1f44 data/robbysmaterialmod/loot_table/block
 19b24267f57e25efb55c4d4eaecfecaac681151b data/robbysmaterialmod/loot_table/blocks/titanium_door.json
 14fba5241c93868fd804ebc4264f08b885c8d1b9 data/robbysmaterialmod/loot_table/blocks/titanium_fence.json
 5162b6ae8c36dcc2b3d29053eb543fe91f4426d1 data/robbysmaterialmod/loot_table/blocks/titanium_fence_gate.json
+d12ea33ae73546b7c05f5c649ea550f5ef03d46d data/robbysmaterialmod/loot_table/blocks/titanium_lamp.json
 4a3d9f6020adf98531074fe324490416881fe182 data/robbysmaterialmod/loot_table/blocks/titanium_ore.json
 ecc963dae4383762f31bd6d805b2d39288a69c36 data/robbysmaterialmod/loot_table/blocks/titanium_pressure_plate.json
 58eeb07b4537c86ffdbf247fe128166fe60d7c80 data/robbysmaterialmod/loot_table/blocks/titanium_slab.json

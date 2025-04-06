@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "robbysmaterialmod:block/titanium_lamp_on"
+  }
+}

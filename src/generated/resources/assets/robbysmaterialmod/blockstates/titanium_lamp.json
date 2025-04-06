@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "robbysmaterialmod:block/titanium_lamp_off"
+    },
+    "clicked=true": {
+      "model": "robbysmaterialmod:block/titanium_lamp_on"
+    }
+  }
+}
