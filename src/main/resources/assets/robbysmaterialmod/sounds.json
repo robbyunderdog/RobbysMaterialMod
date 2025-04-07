@@ -4,5 +4,13 @@
     "sounds": [
       "robbysmaterialmod:chisel_use"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "robbysmaterialmod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

@@ -48,6 +48,9 @@ public class ModCreativeModeTabs {
                         // SMITHING TEMPLATES
                         output.accept(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get());
 
+                        // MUSIC DISCS
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ROBBYSMATERIAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("robbysmaterial_blocks_tab",

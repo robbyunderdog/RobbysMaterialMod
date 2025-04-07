@@ -11,6 +11,7 @@ import net.robbyunderdog.robbysmaterialmod.item.custom.ChiselItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.FuelItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.HammerItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.ModArmorItem;
+import net.robbyunderdog.robbysmaterialmod.sound.ModSounds;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RobbysMaterialMod.MOD_ID);
@@ -71,6 +72,10 @@ public class ModItems {
     // SMITHING TEMPLATES
     public static final RegistryObject<Item> LIGHTWEIGHT_SMITHING_TEMPLATE = ITEMS.register("lightweight_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight")));
+
+    // MUSIC DISCS
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
     // WEAPONS
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",

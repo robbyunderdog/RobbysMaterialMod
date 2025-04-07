@@ -47,7 +47,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TITANIUM_INGOT.get());
 
         // TOOLS
-        // basicItem(ModItems.TITANIUM_CHISEL.get());
         handheldItem(ModItems.TITANIUM_SWORD);
         handheldItem(ModItems.TITANIUM_PICKAXE);
         handheldItem(ModItems.TITANIUM_AXE);
@@ -66,6 +65,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // SMITHING TEMPLATES
         basicItem(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get());
+
+        // MUSIC DISCS
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
         // FOOD
         basicItem(ModItems.PHILLY_CHEESESTEAK.get());
