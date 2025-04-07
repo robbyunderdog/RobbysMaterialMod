@@ -1,0 +1,8 @@
+{
+  "asset_id": "robbysmaterialmod:lightweight",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.robbysmaterialmod.lightweight"
+  },
+  "template_item": "robbysmaterialmod:lightweight_armor_trim_smithing_template"
+}

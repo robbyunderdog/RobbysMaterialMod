@@ -60,7 +60,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TITANIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.TITANIUM_LEGGINGS);
         trimmedArmorItem(ModItems.TITANIUM_BOOTS);
+
+        // HORSE ARMOR
         basicItem(ModItems.TITANIUM_HORSE_ARMOR.get());
+
+        // SMITHING TEMPLATES
+        basicItem(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get());
 
         // FOOD
         basicItem(ModItems.PHILLY_CHEESESTEAK.get());
@@ -68,12 +73,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         // FUEL
         basicItem(ModItems.ORGANIC_FUEL.get());
 
-        // TITANIUM ADV BLOCKS
+        // ADVANCED BLOCKS
         buttonItem(ModBlocks.TITANIUM_BUTTON, ModBlocks.TITANIUM_BLOCK);
         fenceItem(ModBlocks.TITANIUM_FENCE, ModBlocks.TITANIUM_BLOCK);
         wallItem(ModBlocks.TITANIUM_WALL, ModBlocks.TITANIUM_BLOCK);
         simpleBlockItem(ModBlocks.TITANIUM_DOOR);
     }
+
+
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = RobbysMaterialMod.MOD_ID;
@@ -111,31 +118,26 @@ public class ModItemModelProvider extends ItemModelProvider {
             });
         }
     }
-
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/handheld")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "item/" + item.getId().getPath()));
     }
-
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture", ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID,
                         "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
     public void fenceItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture", ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID,
                         "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
     public void wallItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID,
                         "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
     private ItemModelBuilder simpleBlockItem(RegistryObject<? extends Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",

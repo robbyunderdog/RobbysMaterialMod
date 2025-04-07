@@ -44,6 +44,9 @@ public class ModCreativeModeTabs {
                         // FUEL
                         output.accept(ModItems.ORGANIC_FUEL.get());
 
+                        // SMITHING TEMPLATES
+                        output.accept(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ROBBYSMATERIAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("robbysmaterial_blocks_tab",

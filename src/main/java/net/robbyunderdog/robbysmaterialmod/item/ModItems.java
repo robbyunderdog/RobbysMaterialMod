@@ -1,5 +1,6 @@
 package net.robbyunderdog.robbysmaterialmod.item;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -69,6 +70,10 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_HORSE_ARMOR = ITEMS.register("titanium_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    // SMITHING TEMPLATES
+    public static final RegistryObject<Item> LIGHTWEIGHT_SMITHING_TEMPLATE = ITEMS.register("lightweight_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight")));
 
 
     public static void register(IEventBus eventBus) {

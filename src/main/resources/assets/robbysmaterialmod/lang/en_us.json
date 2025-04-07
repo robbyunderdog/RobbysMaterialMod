@@ -11,11 +11,15 @@
   "item.robbysmaterialmod.titanium_hoe": "Titanium Hoe",
   "item.robbysmaterialmod.titanium_hammer": "Titanium Hammer",
 
+
   "item.robbysmaterialmod.titanium_helmet": "Titanium Helmet",
   "item.robbysmaterialmod.titanium_chestplate": "Titanium Chestplate",
   "item.robbysmaterialmod.titanium_leggings": "Titanium Leggings",
   "item.robbysmaterialmod.titanium_boots": "Titanium Boots",
   "item.robbysmaterialmod.titanium_horse_armor": "Titanium Horse Armor",
+
+
+  "item.robbysmaterialmod.lightweight_armor_trim_smithing_template": "Lightweight Trim Template",
 
 
   "item.robbysmaterialmod.philly_cheesesteak": "Philly Cheesesteak",
@@ -42,6 +46,10 @@
 
   "tooltip.robbysmaterialmod.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.robbysmaterialmod.chisel": "Press §eShift§r for more Information",
+
+
+  "trim_pattern.robbysmaterialmod.lightweight": "Lightweight Armor Trim",
+  "trim_material.robbysmaterialmod.titanium_ingot": "Lightweight Material",
 
 
   "creativetab.robbysmaterialmod.robbysmaterial_items": "Robby's Materials Items",

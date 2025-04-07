@@ -4,6 +4,7 @@ import com.sun.jna.platform.win32.WinDef;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
@@ -172,6 +173,10 @@ public class ModRecipeProvider extends RecipeProvider {
             // TITANIUM INGOT SMELTING AND BLASTING (LIST AT TOP)
         oreSmelting(pRecipeOutput, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 200, "titanium_ingot");
         oreBlasting(pRecipeOutput, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 200, "titanium_ingot");
+
+    // ARMOR TRIMS
+            // LIGHTWEIGHT (TITANIUM)
+        trimSmithing(pRecipeOutput, ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight"));
     }
 
 
