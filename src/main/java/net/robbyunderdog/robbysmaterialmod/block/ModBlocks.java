@@ -19,19 +19,16 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RobbysMaterialMod.MOD_ID);
-
+// TITANIUM BLOCKS
     // TITANIUM ORE
     public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore", () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops()));
     // TITANIUM DEEPSLATE ORE
     public static final RegistryObject<Block> TITANIUM_DEEPSLATE_ORE = registerBlock("titanium_deepslate_ore", () -> new DropExperienceBlock(UniformInt.of(3,5), BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
-
     // RAW TITANIUM BLOCK
     public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = registerBlock("raw_titanium_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
-// TITANIUM BLOCKS
     // TITANIUM BLOCK
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));

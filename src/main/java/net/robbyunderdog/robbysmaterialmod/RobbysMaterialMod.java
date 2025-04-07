@@ -1,7 +1,6 @@
 package net.robbyunderdog.robbysmaterialmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -18,6 +17,7 @@ import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.component.ModDataComponentTypes;
 import net.robbyunderdog.robbysmaterialmod.item.ModCreativeModeTabs;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
+import net.robbyunderdog.robbysmaterialmod.sound.ModSounds;
 import net.robbyunderdog.robbysmaterialmod.util.ModItemProperties;
 import org.slf4j.Logger;
 
@@ -42,6 +42,7 @@ public class RobbysMaterialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

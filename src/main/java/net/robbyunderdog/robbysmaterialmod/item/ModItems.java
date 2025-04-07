@@ -34,9 +34,6 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 1600));
 
     // TOOLS
-    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
-            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 3, -2.4f))));
     public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
             () -> new PickaxeItem(ModToolTiers.TITANIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 1, -2.8f))));
@@ -76,6 +73,9 @@ public class ModItems {
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight")));
 
     // WEAPONS
+    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
+            () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 3, -2.4f))));
     public static final RegistryObject<Item> TITANIUM_BOW =ITEMS.register("titanium_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
 
