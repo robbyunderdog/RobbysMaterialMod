@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
@@ -24,11 +25,11 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
-        // LIST OF TITANIUM SMELTABLES
-        List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM.get(),
-                ModBlocks.TITANIUM_ORE.get(), ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
+    // LIST OF SMELTABLES
+        List<ItemLike> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM.get(), ModBlocks.TITANIUM_ORE.get(), ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
 
-    // TITANIUM BLOCKS
+
+    // BLOCKS
             // TITANIUM BLOCK
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITANIUM_BLOCK.get())
                 .pattern("AAA")
@@ -68,6 +69,7 @@ public class ModRecipeProvider extends RecipeProvider {
         trapdoorBuilder(ModBlocks.TITANIUM_TRAPDOOR.get(), Ingredient.of(ModItems.TITANIUM_INGOT.get())).group("titanium")
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
 
+
     // FUEL
             // ORGANIC FUEL
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ORGANIC_FUEL.get())
@@ -76,6 +78,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern(" A ")
                 .define('A', Items.WHEAT)
                 .unlockedBy(getHasName(Items.WHEAT), has(Items.WHEAT)).save(pRecipeOutput);
+
 
     // TOOLS
             // TITANIUM CHISEL
@@ -126,6 +129,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern(" B ")
                 .define('A', ModBlocks.TITANIUM_BLOCK.get()).define('B', Items.STICK)
                 .unlockedBy(getHasName(ModBlocks.TITANIUM_BLOCK.get()), has(ModBlocks.TITANIUM_BLOCK.get())).save(pRecipeOutput);
+            // TITANIUM BOW
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TITANIUM_BOW.get())
+                .pattern(" AB")
+                .pattern("A B")
+                .pattern(" AB")
+                .define('A', ModItems.TITANIUM_INGOT.get()).define('B', Items.STRING)
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+
+
     // ARMOR
             // TITANIUM HELMET
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TITANIUM_HELMET.get())
@@ -161,6 +173,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.TITANIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
 
+
     // BASIC ITEMS
             // TITANIUM INGOT
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 9)
@@ -174,9 +187,16 @@ public class ModRecipeProvider extends RecipeProvider {
         oreSmelting(pRecipeOutput, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 200, "titanium_ingot");
         oreBlasting(pRecipeOutput, TITANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.TITANIUM_INGOT.get(), 0.25f, 200, "titanium_ingot");
 
+
     // ARMOR TRIMS
             // LIGHTWEIGHT (TITANIUM)
         trimSmithing(pRecipeOutput, ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get(), 2)
+                .pattern("CAC")
+                .pattern("CBC")
+                .pattern("CCC")
+                .define('A', ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get()).define('B', ModBlocks.TITANIUM_BLOCK.get()).define('C', Items.DIAMOND)
+                .unlockedBy(getHasName(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get()), has(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get())).save(pRecipeOutput);
     }
 
 

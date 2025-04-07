@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "robbysmaterialmod:titanium_ingot"
+    },
+    "B": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " AB",
+    "A B",
+    " AB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "robbysmaterialmod:titanium_bow"
+  }
+}

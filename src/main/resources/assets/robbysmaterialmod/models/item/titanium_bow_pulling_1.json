@@ -1,0 +1,6 @@
+{
+  "parent": "robbysmaterialmod:item/titanium_bow",
+  "textures": {
+    "layer0": "robbysmaterialmod:item/titanium_bow_pulling_1"
+  }
+}

@@ -33,7 +33,7 @@ public class ModItems {
     public static final RegistryObject<Item> ORGANIC_FUEL = ITEMS.register("organic_fuel",
             () -> new FuelItem(new Item.Properties(), 1600));
 
-    // TITANIUM TOOLS
+    // TOOLS
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
             () -> new SwordItem(ModToolTiers.TITANIUM, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 3, -2.4f))));
@@ -53,7 +53,7 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.TITANIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 7, -3.6f))));
 
-    // TITANIUM ARMOR
+    // ARMOR
     public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
             () -> new ModArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35))));
@@ -75,6 +75,9 @@ public class ModItems {
     public static final RegistryObject<Item> LIGHTWEIGHT_SMITHING_TEMPLATE = ITEMS.register("lightweight_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight")));
 
+    // WEAPONS
+    public static final RegistryObject<Item> TITANIUM_BOW =ITEMS.register("titanium_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

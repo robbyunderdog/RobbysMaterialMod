@@ -22,7 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_TITANIUM.get());
                         output.accept(ModItems.TITANIUM_INGOT.get());
 
-                        // TOOLS
+                        // TOOLS & WEAPONS
                         output.accept(ModItems.TITANIUM_CHISEL.get());
                         output.accept(ModItems.TITANIUM_SWORD.get());
                         output.accept(ModItems.TITANIUM_PICKAXE.get());
@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TITANIUM_SHOVEL.get());
                         output.accept(ModItems.TITANIUM_HOE.get());
                         output.accept(ModItems.TITANIUM_HAMMER.get());
+                        output.accept(ModItems.TITANIUM_BOW.get());
 
                         // ARMOR
                         output.accept(ModItems.TITANIUM_HELMET.get());
