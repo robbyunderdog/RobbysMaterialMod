@@ -1,4 +1,4 @@
-// 1.21	2025-04-06T08:38:02.4814315	Item Models: robbysmaterialmod
+// 1.21	2025-04-07T02:03:46.6309584	Item Models: robbysmaterialmod
 a645d30a8afd2c16f0b44664b16dfd4ef66bde2a assets/robbysmaterialmod/models/item/organic_fuel.json
 6f0c8840a04e4a163f2c5a8912d5873dd4d9cc6c assets/robbysmaterialmod/models/item/philly_cheesesteak.json
 8309d30278e3cbdfed50118df30f3a5a08995241 assets/robbysmaterialmod/models/item/raw_titanium.json
@@ -42,6 +42,7 @@ b13b4c2e076e6b68a84178e126c7d5e31faa1140 assets/robbysmaterialmod/models/item/ti
 f945aec0b2600b10ca87baacb5d579a19a7c362f assets/robbysmaterialmod/models/item/titanium_helmet_quartz_trim.json
 403af173de60cc26347d1eb70a9dc95ed82d47e0 assets/robbysmaterialmod/models/item/titanium_helmet_redstone_trim.json
 21ed961c6a2e41f10ec2092c5eef7315e7476f8e assets/robbysmaterialmod/models/item/titanium_hoe.json
+2872650a4808b7bb4160f77bc620b54059182c1c assets/robbysmaterialmod/models/item/titanium_horse_armor.json
 322701e94e4d73f203e8d2f0ddba6ff6dfa6367a assets/robbysmaterialmod/models/item/titanium_ingot.json
 f0f3c2ae801f7738a2994763bffb580d0f869ca0 assets/robbysmaterialmod/models/item/titanium_leggings.json
 9fce460c66304c47f1e086f5f4849918287ac9a2 assets/robbysmaterialmod/models/item/titanium_leggings_amethyst_trim.json

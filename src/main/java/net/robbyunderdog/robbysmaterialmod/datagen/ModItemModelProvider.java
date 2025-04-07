@@ -60,6 +60,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TITANIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.TITANIUM_LEGGINGS);
         trimmedArmorItem(ModItems.TITANIUM_BOOTS);
+        basicItem(ModItems.TITANIUM_HORSE_ARMOR.get());
 
         // FOOD
         basicItem(ModItems.PHILLY_CHEESESTEAK.get());

@@ -152,6 +152,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("A A")
                 .define('A', ModItems.TITANIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
+            // TITANIUM HORSE ARMOR
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TITANIUM_HORSE_ARMOR.get())
+                .pattern("A  ")
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.TITANIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
 
     // BASIC ITEMS
             // TITANIUM INGOT

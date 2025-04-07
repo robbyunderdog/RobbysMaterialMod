@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TITANIUM_CHESTPLATE.get());
                         output.accept(ModItems.TITANIUM_LEGGINGS.get());
                         output.accept(ModItems.TITANIUM_BOOTS.get());
+                        output.accept(ModItems.TITANIUM_HORSE_ARMOR.get());
 
                         // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());
