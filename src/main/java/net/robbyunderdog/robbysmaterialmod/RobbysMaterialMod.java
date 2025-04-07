@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.component.ModDataComponentTypes;
+import net.robbyunderdog.robbysmaterialmod.effect.ModEffects;
 import net.robbyunderdog.robbysmaterialmod.item.ModCreativeModeTabs;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 import net.robbyunderdog.robbysmaterialmod.sound.ModSounds;
@@ -43,6 +44,8 @@ public class RobbysMaterialMod {
 
         ModDataComponentTypes.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
