@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "robbysmaterialmod:item/titanium_chisel"
+    "layer0": "robbysmaterialmod:item/titanium_chisel_used"
   }
 }

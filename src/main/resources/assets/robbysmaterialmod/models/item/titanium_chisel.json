@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "robbysmaterialmod:item/titanium_chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "robbysmaterialmod:used": 1
+      },
+      "model": "robbysmaterialmod:item/titanium_chisel_used"
+    }
+  ]
+}

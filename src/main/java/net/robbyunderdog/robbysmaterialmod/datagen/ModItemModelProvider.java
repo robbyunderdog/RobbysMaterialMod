@@ -47,7 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TITANIUM_INGOT.get());
 
         // TOOLS
-        basicItem(ModItems.TITANIUM_CHISEL.get());
+        // basicItem(ModItems.TITANIUM_CHISEL.get());
         handheldItem(ModItems.TITANIUM_SWORD);
         handheldItem(ModItems.TITANIUM_PICKAXE);
         handheldItem(ModItems.TITANIUM_AXE);
