@@ -18,6 +18,7 @@ import net.robbyunderdog.robbysmaterialmod.component.ModDataComponentTypes;
 import net.robbyunderdog.robbysmaterialmod.effect.ModEffects;
 import net.robbyunderdog.robbysmaterialmod.item.ModCreativeModeTabs;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
+import net.robbyunderdog.robbysmaterialmod.potion.ModPotions;
 import net.robbyunderdog.robbysmaterialmod.sound.ModSounds;
 import net.robbyunderdog.robbysmaterialmod.util.ModItemProperties;
 import org.slf4j.Logger;
@@ -46,6 +47,7 @@ public class RobbysMaterialMod {
         ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

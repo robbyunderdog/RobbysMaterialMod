@@ -1,3 +1,8 @@
 {
-  "values": []
+  "values": [
+    "robbysmaterialmod:lead_ore",
+    "robbysmaterialmod:lead_deepslate_ore",
+    "robbysmaterialmod:raw_lead_block",
+    "robbysmaterialmod:lead_block"
+  ]
 }

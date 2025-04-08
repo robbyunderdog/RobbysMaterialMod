@@ -3,12 +3,12 @@ package net.robbyunderdog.robbysmaterialmod.item.custom;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.robbyunderdog.robbysmaterialmod.effect.ModEffects;
 import net.robbyunderdog.robbysmaterialmod.item.ModArmorMaterials;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0, false, false)))
+                            List.of(new MobEffectInstance(ModEffects.LIGHTWEIGHT_EFFECT.getHolder().get(), 200, 0, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

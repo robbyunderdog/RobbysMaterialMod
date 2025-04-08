@@ -24,6 +24,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // ORES
         blockWithItem(ModBlocks.TITANIUM_ORE);
         blockWithItem(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.LEAD_ORE);
+        blockWithItem(ModBlocks.LEAD_DEEPSLATE_ORE);
 
         // TITANIUM BLOCKS
         blockWithItem(ModBlocks.RAW_TITANIUM_BLOCK);
@@ -46,6 +48,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.TITANIUM_TRAPDOOR, "_bottom");
 
         customLamp(ModBlocks.TITANIUM_LAMP);
+
+
+        // LEAD BLOCKS
+        blockWithItem(ModBlocks.RAW_LEAD_BLOCK);
+        blockWithItem(ModBlocks.LEAD_BLOCK);
     }
 
     private void customLamp(RegistryObject<? extends Block> blockRegistryObject) {

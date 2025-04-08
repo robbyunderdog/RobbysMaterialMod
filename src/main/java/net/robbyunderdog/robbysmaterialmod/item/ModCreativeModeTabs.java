@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         // BASIC ITEMS
                         output.accept(ModItems.RAW_TITANIUM.get());
                         output.accept(ModItems.TITANIUM_INGOT.get());
+                        output.accept(ModItems.RAW_LEAD.get());
+                        output.accept(ModItems.LEAD_INGOT.get());
 
                         // TOOLS & WEAPONS
                         output.accept(ModItems.TITANIUM_CHISEL.get());
@@ -62,6 +64,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TITANIUM_ORE.get());
                         output.accept(ModBlocks.TITANIUM_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.RAW_TITANIUM_BLOCK.get());
+                        output.accept(ModBlocks.LEAD_ORE.get());
+                        output.accept(ModBlocks.LEAD_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.RAW_LEAD_BLOCK.get());
 
                         // TITANIUM BLOCK BLOCKS
                         output.accept(ModBlocks.TITANIUM_BLOCK.get());
@@ -75,6 +80,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TITANIUM_DOOR.get());
                         output.accept(ModBlocks.TITANIUM_TRAPDOOR.get());
                         output.accept(ModBlocks.TITANIUM_LAMP.get());
+
+                        // LEAD BLOCK BLOCKS
+                        output.accept(ModBlocks.LEAD_BLOCK.get());
 
                     }).build());
 

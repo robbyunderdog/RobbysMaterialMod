@@ -1,8 +1,10 @@
-// 1.21	2025-04-07T16:22:22.2532573	Item Models: robbysmaterialmod
+// 1.21	2025-04-07T20:35:21.9619213	Item Models: robbysmaterialmod
 8143a2eda994d623fd8149993d0d297e761b75ad assets/robbysmaterialmod/models/item/bar_brawl_music_disc.json
+1fcc0f9ef625a710f2cdf77e02346afbc42f6c3e assets/robbysmaterialmod/models/item/lead_ingot.json
 6ee3cdc97578655692b26d3640b4a34c6afac0c4 assets/robbysmaterialmod/models/item/lightweight_armor_trim_smithing_template.json
 a645d30a8afd2c16f0b44664b16dfd4ef66bde2a assets/robbysmaterialmod/models/item/organic_fuel.json
 6f0c8840a04e4a163f2c5a8912d5873dd4d9cc6c assets/robbysmaterialmod/models/item/philly_cheesesteak.json
+8a283a4b8237efe0310b0cbff6f6b328c842bc52 assets/robbysmaterialmod/models/item/raw_lead.json
 8309d30278e3cbdfed50118df30f3a5a08995241 assets/robbysmaterialmod/models/item/raw_titanium.json
 2c5b2b7ec9ead8c80a2d7d702289f75fabb1dec0 assets/robbysmaterialmod/models/item/titanium_axe.json
 af33f10584a9d0405309c8f5bd4051c877e29bb0 assets/robbysmaterialmod/models/item/titanium_boots.json

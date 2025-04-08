@@ -30,6 +30,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         // ORES
         this.add(ModBlocks.TITANIUM_ORE.get(), block -> createOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
         this.add(ModBlocks.TITANIUM_DEEPSLATE_ORE.get(), block -> createOreDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE.get(), ModItems.RAW_TITANIUM.get()));
+        this.add(ModBlocks.LEAD_ORE.get(), block -> createOreDrop(ModBlocks.LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
+        this.add(ModBlocks.LEAD_DEEPSLATE_ORE.get(), block -> createOreDrop(ModBlocks.LEAD_DEEPSLATE_ORE.get(), ModItems.RAW_LEAD.get()));
 
         // TITANIUM BLOCKS
         dropSelf(ModBlocks.RAW_TITANIUM_BLOCK.get());
@@ -44,6 +46,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TITANIUM_LAMP.get());
         this.add(ModBlocks.TITANIUM_SLAB.get(), block -> createSlabItemTable(ModBlocks.TITANIUM_SLAB.get()));
         this.add(ModBlocks.TITANIUM_DOOR.get(), block -> createDoorTable(ModBlocks.TITANIUM_DOOR.get()));
+
+        // LEAD BLOCKS
+        dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
+        dropSelf(ModBlocks.LEAD_BLOCK.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

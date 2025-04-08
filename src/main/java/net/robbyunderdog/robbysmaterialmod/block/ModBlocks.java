@@ -19,6 +19,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RobbysMaterialMod.MOD_ID);
+
 // TITANIUM BLOCKS
     // TITANIUM ORE
     public static final RegistryObject<Block> TITANIUM_ORE = registerBlock("titanium_ore", () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
@@ -63,6 +64,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITANIUM_LAMP = registerBlock("titanium_lamp",
             () -> new LampBlock(BlockBehaviour.Properties.of().strength(3f).lightLevel(state -> state.getValue(LampBlock.CLICKED) ? 15 : 0)));
 
+
+// LEAD BLOCKS
+    // LEAD ORE
+    public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore", () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
+        .strength(3f).requiresCorrectToolForDrops()));
+    // LEAD DEEPSLATE ORE
+    public static final RegistryObject<Block> LEAD_DEEPSLATE_ORE = registerBlock("lead_deepslate_ore", () -> new DropExperienceBlock(UniformInt.of(3,5), BlockBehaviour.Properties.of()
+            .strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    // RAW LEAD BLOCK
+    public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    // TITANIUM BLOCK
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block) {

@@ -1,6 +1,8 @@
 {
   "item.robbysmaterialmod.raw_titanium": "Raw Titanium",
   "item.robbysmaterialmod.titanium_ingot": "Titanium Ingot",
+  "item.robbysmaterialmod.raw_lead": "Raw Lead",
+  "item.robbysmaterialmod.lead_ingot": "Lead Ingot",
 
 
   "item.robbysmaterialmod.titanium_chisel": "Titanium Chisel",
@@ -48,8 +50,18 @@
   "block.robbysmaterialmod.titanium_trapdoor": "Titanium Trapdoor",
   "block.robbysmaterialmod.titanium_lamp": "Titanium Lamp",
 
+  "block.robbysmaterialmod.lead_ore": "Lead Ore",
+  "block.robbysmaterialmod.lead_deepslate_ore": "Deepslate Lead Ore",
+  "block.robbysmaterialmod.raw_lead_block": "Block of Raw Lead",
+  "block.robbysmaterialmod.lead_block": "Block of Lead",
+
 
   "effect.robbysmaterialmod.lightweight": "Lightweight",
+
+
+  "item.minecraft.potion.effect.lightweight_potion": "Potion of Lightweight",
+  "item.minecraft.splash_potion.effect.lightweight_potion": "Splash Potion of Lightweight",
+  "item.minecraft.lingering_potion.effect.lightweight_potion": "Lingering Potion of Lightweight",
 
 
   "tooltip.robbysmaterialmod.chisel.shift_down": "This Item changes certain Blocks",

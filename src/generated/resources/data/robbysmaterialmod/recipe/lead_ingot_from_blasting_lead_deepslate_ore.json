@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "lead_ingot",
+  "ingredient": {
+    "item": "robbysmaterialmod:lead_deepslate_ore"
+  },
+  "result": {
+    "id": "robbysmaterialmod:lead_ingot"
+  }
+}

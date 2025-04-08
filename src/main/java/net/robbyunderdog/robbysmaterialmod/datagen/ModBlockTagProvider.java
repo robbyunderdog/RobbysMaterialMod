@@ -25,20 +25,26 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_TITANIUM_BLOCK.get())
                 .add(ModBlocks.TITANIUM_BLOCK.get())
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE.get())
-                .add(ModBlocks.TITANIUM_ORE.get());
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.LEAD_ORE.get())
+                .add(ModBlocks.LEAD_DEEPSLATE_ORE.get());
 
         // NEEDS IRON TOOL
-        tag(BlockTags.NEEDS_IRON_TOOL);
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.LEAD_ORE.get())
+                .add(ModBlocks.LEAD_DEEPSLATE_ORE.get())
+                .add(ModBlocks.RAW_LEAD_BLOCK.get())
+                .add(ModBlocks.LEAD_BLOCK.get());
 
         // NEEDS DIAMOND TOOL
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE.get())
-                .add(ModBlocks.TITANIUM_ORE.get());
+                .add(ModBlocks.TITANIUM_ORE.get())
+                .add(ModBlocks.RAW_TITANIUM_BLOCK.get())
+                .add(ModBlocks.TITANIUM_BLOCK.get());
 
         // NEEDS TITANIUM TOOL
         tag(ModTags.Blocks.NEEDS_TITANIUM_TOOL)
-                .add(ModBlocks.RAW_TITANIUM_BLOCK.get())
-                .add(ModBlocks.TITANIUM_BLOCK.get())
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         // INCORRECT FOR TITANIUM TOOL

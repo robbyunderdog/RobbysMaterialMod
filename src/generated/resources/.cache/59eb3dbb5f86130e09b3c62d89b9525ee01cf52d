@@ -1,4 +1,8 @@
-// 1.21	2025-04-06T02:15:46.5546735	Loot Tables
+// 1.21	2025-04-07T20:58:51.9426566	Loot Tables
+35d119115e0562d0e273dc5833cf3041a24619b0 data/robbysmaterialmod/loot_table/blocks/lead_block.json
+18d29826fbeb93279c927aaf912d4ef87aefe0a5 data/robbysmaterialmod/loot_table/blocks/lead_deepslate_ore.json
+9293c270e4b741b03e5486310245abd6914e7d3c data/robbysmaterialmod/loot_table/blocks/lead_ore.json
+99240b670ce34dbd43827b35ec7eed0e48d9a4b6 data/robbysmaterialmod/loot_table/blocks/raw_lead_block.json
 07484f4e19476027b68751aabbc9814b8f8346a5 data/robbysmaterialmod/loot_table/blocks/raw_titanium_block.json
 cec8b0da4c771d3ab14e746a8cc6b7315f0f1f44 data/robbysmaterialmod/loot_table/blocks/titanium_block.json
 7cafb1f0e1cd7fbde755dbd65f610cf201781157 data/robbysmaterialmod/loot_table/blocks/titanium_button.json

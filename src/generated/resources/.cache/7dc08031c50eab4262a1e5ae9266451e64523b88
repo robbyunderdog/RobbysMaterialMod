@@ -1,9 +1,9 @@
-// 1.21	2025-04-06T03:49:45.0006309	Tags for minecraft:block mod id robbysmaterialmod
+// 1.21	2025-04-07T20:58:51.9416562	Tags for minecraft:block mod id robbysmaterialmod
 ca9815fd8a5b69debd03fb0bf33005cf9abb10de data/minecraft/tags/block/fences.json
 09e74fedccb02cdf1ad7478e67411da8fa8b939a data/minecraft/tags/block/fence_gates.json
-a3a9cb2cd438c6fddf4e6b0ff4f41b9b42c97467 data/minecraft/tags/block/mineable/pickaxe.json
-9461953833ce4f1c576629258a7998a118349c16 data/minecraft/tags/block/needs_diamond_tool.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
+7f59a9277d99e73099c1d9e6096aa59847ff9e4a data/minecraft/tags/block/mineable/pickaxe.json
+36031c0feff1fb3b88a13599acc9779cf41fe0dd data/minecraft/tags/block/needs_diamond_tool.json
+ca440af70f19fffb1754787b8dc0696660a4cd30 data/minecraft/tags/block/needs_iron_tool.json
 c3ef63081d512a73bb0a39d66a38dee7a73f9c91 data/minecraft/tags/block/walls.json
 82b34ba37a1a311aaa148f365dabea79c073a457 data/robbysmaterialmod/tags/block/incorrect_for_titanium_tool.json
-87c356ebd65a0be1d6087f7914baea79a7d1689f data/robbysmaterialmod/tags/block/needs_titanium_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/robbysmaterialmod/tags/block/needs_titanium_tool.json
