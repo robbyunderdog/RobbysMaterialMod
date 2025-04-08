@@ -56,12 +56,20 @@
   "block.robbysmaterialmod.lead_block": "Block of Lead",
 
 
-  "effect.robbysmaterialmod.lightweight": "Lightweight",
-
-
   "item.minecraft.potion.effect.lightweight_potion": "Potion of Lightweight",
   "item.minecraft.splash_potion.effect.lightweight_potion": "Splash Potion of Lightweight",
   "item.minecraft.lingering_potion.effect.lightweight_potion": "Lingering Potion of Lightweight",
+
+
+  "painting.robbysmaterialmod.world.title": "World",
+  "painting.robbysmaterialmod.world.author": "NanoAttack",
+  "painting.robbysmaterialmod.shrimp.title": "Shrimp",
+  "painting.robbysmaterialmod.shrimp.author": "NanoAttack",
+  "painting.robbysmaterialmod.saw_them.title": "Saw Them",
+  "painting.robbysmaterialmod.saw_them.author": "NanoAttack",
+
+
+  "effect.robbysmaterialmod.lightweight": "Lightweight",
 
 
   "tooltip.robbysmaterialmod.chisel.shift_down": "This Item changes certain Blocks",
