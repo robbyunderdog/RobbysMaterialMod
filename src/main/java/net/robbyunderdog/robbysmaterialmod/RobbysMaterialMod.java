@@ -16,6 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.component.ModDataComponentTypes;
 import net.robbyunderdog.robbysmaterialmod.effect.ModEffects;
+import net.robbyunderdog.robbysmaterialmod.enchantment.ModEnchantmentEffects;
 import net.robbyunderdog.robbysmaterialmod.item.ModCreativeModeTabs;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 import net.robbyunderdog.robbysmaterialmod.potion.ModPotions;
@@ -48,6 +49,8 @@ public class RobbysMaterialMod {
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
