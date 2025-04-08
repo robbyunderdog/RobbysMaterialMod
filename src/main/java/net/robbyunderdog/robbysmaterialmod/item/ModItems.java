@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
+import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.item.custom.ChiselItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.FuelItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.HammerItem;
@@ -33,6 +34,8 @@ public class ModItems {
     // FOOD
     public static final RegistryObject<Item> PHILLY_CHEESESTEAK = ITEMS.register("philly_cheesesteak",
             () -> new Item(new Item.Properties().food(ModFoodProperties.PHILLY_CHEESESTEAK)));
+    public static final RegistryObject<Item> BELLPEPPER = ITEMS.register("bellpepper",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BELLPEPPER)));
 
     // FUEL
     public static final RegistryObject<Item> ORGANIC_FUEL = ITEMS.register("organic_fuel",
@@ -80,6 +83,10 @@ public class ModItems {
     // MUSIC DISCS
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+    // CROP SEEDS
+    public static final RegistryObject<Item> BELLPEPPER_SEEDS = ITEMS.register("bellpepper_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BELLPEPPER_CROP.get(), new Item.Properties()));
 
     // WEAPONS
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",

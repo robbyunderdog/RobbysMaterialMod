@@ -7,4 +7,5 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoodProperties {
     public static final FoodProperties PHILLY_CHEESESTEAK = new FoodProperties.Builder().nutrition(10).saturationModifier(0.9f)
             .effect(new MobEffectInstance(MobEffects.SATURATION, 600), 1.00f).build();
+    public static final FoodProperties BELLPEPPER = new FoodProperties.Builder().nutrition(3).saturationModifier(0.2f).build();
 }

@@ -3,6 +3,8 @@ package net.robbyunderdog.robbysmaterialmod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -11,7 +13,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
+import net.robbyunderdog.robbysmaterialmod.block.custom.BellpepperCropBlock;
 import net.robbyunderdog.robbysmaterialmod.block.custom.LampBlock;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -53,6 +58,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // LEAD BLOCKS
         blockWithItem(ModBlocks.RAW_LEAD_BLOCK);
         blockWithItem(ModBlocks.LEAD_BLOCK);
+
+
+        // CROPS
+        makeCrop(((CropBlock) ModBlocks.BELLPEPPER_CROP.get()), "bellpepper_crop_stage", "bellpepper_crop_stage");
+    }
+
+
+
+    public void makeCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((BellpepperCropBlock) block).getAgeProperty()),
+                ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "block/" + textureName + state.getValue(((BellpepperCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
     }
 
     private void customLamp(RegistryObject<? extends Block> blockRegistryObject) {

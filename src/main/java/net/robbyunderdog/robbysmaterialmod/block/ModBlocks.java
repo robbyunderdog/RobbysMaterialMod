@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
+import net.robbyunderdog.robbysmaterialmod.block.custom.BellpepperCropBlock;
 import net.robbyunderdog.robbysmaterialmod.block.custom.LampBlock;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 
@@ -75,9 +76,14 @@ public class ModBlocks {
     // RAW LEAD BLOCK
     public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    // TITANIUM BLOCK
+    // LEAD BLOCK
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+// CROPS
+    // BELLPEPPER CROPS
+    public static final RegistryObject<Block> BELLPEPPER_CROP = BLOCKS.register("bellpepper_crop",
+            () -> new BellpepperCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block) {

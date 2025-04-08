@@ -43,9 +43,13 @@ public class ModCreativeModeTabs {
 
                         // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());
+                        output.accept(ModItems.BELLPEPPER.get());
 
                         // FUEL
                         output.accept(ModItems.ORGANIC_FUEL.get());
+
+                        // SEEDS
+                        output.accept(ModItems.BELLPEPPER_SEEDS.get());
 
                         // SMITHING TEMPLATES
                         output.accept(ModItems.LIGHTWEIGHT_SMITHING_TEMPLATE.get());

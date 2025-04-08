@@ -30,9 +30,16 @@
 
 
   "item.robbysmaterialmod.philly_cheesesteak": "Philly Cheesesteak",
+  "item.robbysmaterialmod.bellpepper": "Bellpepper",
+
+
+  "item.robbysmaterialmod.bellpepper_seeds": "Bellpepper Seeds",
 
 
   "item.robbysmaterialmod.organic_fuel": "Organic Fuel",
+
+
+  "block.robbysmaterialmod.bellpepper_crop": "Bellpepper Crop",
 
 
   "block.robbysmaterialmod.titanium_ore": "Titanium Ore",
