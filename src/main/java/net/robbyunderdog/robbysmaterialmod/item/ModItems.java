@@ -17,6 +17,7 @@ import net.robbyunderdog.robbysmaterialmod.sound.ModSounds;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RobbysMaterialMod.MOD_ID);
 
+
     // NON-UNIQUE ITEMS
     public static final RegistryObject<Item> RAW_TITANIUM = ITEMS.register("raw_titanium",
             () -> new Item(new Item.Properties()));
@@ -27,19 +28,25 @@ public class ModItems {
     public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
             () -> new Item(new Item.Properties()));
 
+
     // ADVANCED ITEMS
     public static final RegistryObject<Item> TITANIUM_CHISEL = ITEMS.register("titanium_chisel",
             () -> new ChiselItem(new Item.Properties().durability(128)));
+
 
     // FOOD
     public static final RegistryObject<Item> PHILLY_CHEESESTEAK = ITEMS.register("philly_cheesesteak",
             () -> new Item(new Item.Properties().food(ModFoodProperties.PHILLY_CHEESESTEAK)));
     public static final RegistryObject<Item> BELLPEPPER = ITEMS.register("bellpepper",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BELLPEPPER)));
+    public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries",
+            () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.BLUEBERRIES)));
+
 
     // FUEL
     public static final RegistryObject<Item> ORGANIC_FUEL = ITEMS.register("organic_fuel",
             () -> new FuelItem(new Item.Properties(), 1600));
+
 
     // TOOLS
     public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
@@ -57,6 +64,7 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_HAMMER = ITEMS.register("titanium_hammer",
             () -> new HammerItem(ModToolTiers.TITANIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 7, -3.6f))));
+
 
     // ARMOR
     public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
@@ -76,17 +84,21 @@ public class ModItems {
             () -> new AnimalArmorItem(ModArmorMaterials.TITANIUM_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
 
+
     // SMITHING TEMPLATES
     public static final RegistryObject<Item> LIGHTWEIGHT_SMITHING_TEMPLATE = ITEMS.register("lightweight_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "lightweight")));
+
 
     // MUSIC DISCS
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
+
     // CROP SEEDS
     public static final RegistryObject<Item> BELLPEPPER_SEEDS = ITEMS.register("bellpepper_seeds",
             () -> new ItemNameBlockItem(ModBlocks.BELLPEPPER_CROP.get(), new Item.Properties()));
+
 
     // WEAPONS
     public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",

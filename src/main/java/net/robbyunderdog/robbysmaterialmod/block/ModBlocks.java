@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.custom.BellpepperCropBlock;
+import net.robbyunderdog.robbysmaterialmod.block.custom.BlueberryBushBlock;
 import net.robbyunderdog.robbysmaterialmod.block.custom.LampBlock;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 
@@ -84,6 +85,10 @@ public class ModBlocks {
     // BELLPEPPER CROPS
     public static final RegistryObject<Block> BELLPEPPER_CROP = BLOCKS.register("bellpepper_crop",
             () -> new BellpepperCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    // BLUEBERRY BUSH
+    public static final RegistryObject<Block> BLUEBERRY_BUSH = BLOCKS.register("blueberry_bush",
+            () -> new BlueberryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block) {

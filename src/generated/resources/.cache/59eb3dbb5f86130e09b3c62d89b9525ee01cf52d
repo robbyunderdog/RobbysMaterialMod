@@ -1,5 +1,6 @@
-// 1.21	2025-04-08T15:52:54.2265998	Loot Tables
+// 1.21	2025-04-08T17:03:38.0389059	Loot Tables
 32ad174fdbc3862705014e718040d76533d7cbcd data/robbysmaterialmod/loot_table/blocks/bellpepper_crop.json
+afdbec2bf79f7875e0795ea3db34394edac3a6d4 data/robbysmaterialmod/loot_table/blocks/blueberry_bush.json
 35d119115e0562d0e273dc5833cf3041a24619b0 data/robbysmaterialmod/loot_table/blocks/lead_block.json
 18d29826fbeb93279c927aaf912d4ef87aefe0a5 data/robbysmaterialmod/loot_table/blocks/lead_deepslate_ore.json
 9293c270e4b741b03e5486310245abd6914e7d3c data/robbysmaterialmod/loot_table/blocks/lead_ore.json

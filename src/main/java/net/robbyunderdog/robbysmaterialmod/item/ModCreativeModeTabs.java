@@ -44,6 +44,7 @@ public class ModCreativeModeTabs {
                         // FOOD
                         output.accept(ModItems.PHILLY_CHEESESTEAK.get());
                         output.accept(ModItems.BELLPEPPER.get());
+                        output.accept(ModItems.BLUEBERRIES.get());
 
                         // FUEL
                         output.accept(ModItems.ORGANIC_FUEL.get());

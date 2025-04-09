@@ -9,6 +9,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
@@ -31,13 +33,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        // ORES
+    // ORES
         this.add(ModBlocks.TITANIUM_ORE.get(), block -> createOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
         this.add(ModBlocks.TITANIUM_DEEPSLATE_ORE.get(), block -> createOreDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE.get(), ModItems.RAW_TITANIUM.get()));
         this.add(ModBlocks.LEAD_ORE.get(), block -> createOreDrop(ModBlocks.LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
         this.add(ModBlocks.LEAD_DEEPSLATE_ORE.get(), block -> createOreDrop(ModBlocks.LEAD_DEEPSLATE_ORE.get(), ModItems.RAW_LEAD.get()));
 
-        // TITANIUM BLOCKS
+    // TITANIUM BLOCKS
         dropSelf(ModBlocks.RAW_TITANIUM_BLOCK.get());
         dropSelf(ModBlocks.TITANIUM_BLOCK.get());
         dropSelf(ModBlocks.TITANIUM_STAIRS.get());
@@ -51,15 +53,33 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.TITANIUM_SLAB.get(), block -> createSlabItemTable(ModBlocks.TITANIUM_SLAB.get()));
         this.add(ModBlocks.TITANIUM_DOOR.get(), block -> createDoorTable(ModBlocks.TITANIUM_DOOR.get()));
 
-        // LEAD BLOCKS
+    // LEAD BLOCKS
         dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
         dropSelf(ModBlocks.LEAD_BLOCK.get());
 
-        // CROPS
+    // CROPS
+        // BELLPEPPER CROP
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BELLPEPPER_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BellpepperCropBlock.AGE, BellpepperCropBlock.MAX_AGE));
         this.add(ModBlocks.BELLPEPPER_CROP.get(), this.createCropDrops(ModBlocks.BELLPEPPER_CROP.get(),
                 ModItems.BELLPEPPER.get(), ModItems.BELLPEPPER_SEEDS.get(), lootItemConditionBuilder));
+
+        // BLUEBERRY BUSH
+        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        this.add(ModBlocks.BLUEBERRY_BUSH.get(), block -> this.applyExplosionDecay(
+                block, LootTable.lootTable().withPool(LootPool.lootPool().when(
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BLUEBERRY_BUSH.get())
+                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
+                                ).add(LootItem.lootTableItem(ModItems.BLUEBERRIES.get()))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0f, 3.0f)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
+                ).withPool(LootPool.lootPool().when(
+                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BLUEBERRY_BUSH.get())
+                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
+                                ).add(LootItem.lootTableItem(ModItems.BLUEBERRIES.get()))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0f, 2.0f)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
+                )));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

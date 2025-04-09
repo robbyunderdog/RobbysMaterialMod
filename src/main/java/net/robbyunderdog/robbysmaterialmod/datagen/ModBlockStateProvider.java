@@ -4,6 +4,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -14,6 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.block.custom.BellpepperCropBlock;
+import net.robbyunderdog.robbysmaterialmod.block.custom.BlueberryBushBlock;
 import net.robbyunderdog.robbysmaterialmod.block.custom.LampBlock;
 
 import java.util.function.Function;
@@ -62,16 +64,30 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // CROPS
         makeCrop(((CropBlock) ModBlocks.BELLPEPPER_CROP.get()), "bellpepper_crop_stage", "bellpepper_crop_stage");
+        makeBush(((SweetBerryBushBlock) ModBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");
     }
 
 
+
+
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(BlueberryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "block/" + textureName + state.getValue(BlueberryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
+    }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
     }
-
     private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((BellpepperCropBlock) block).getAgeProperty()),
@@ -79,6 +95,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         return models;
     }
+
+
+
+
 
     private void customLamp(RegistryObject<? extends Block> blockRegistryObject) {
         getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
