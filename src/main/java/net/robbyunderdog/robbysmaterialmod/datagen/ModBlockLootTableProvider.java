@@ -57,6 +57,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
         dropSelf(ModBlocks.LEAD_BLOCK.get());
 
+    // WALNUT BLOCKS
+        this.dropSelf(ModBlocks.WALNUT_LOG.get());
+        this.dropSelf(ModBlocks.WALNUT_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_WALNUT_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_WALNUT_WOOD.get());
+        this.dropSelf(ModBlocks.WALNUT_PLANKS.get());
+        this.dropSelf(ModBlocks.WALNUT_SAPLING.get());
+        this.add(ModBlocks.WALNUT_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
     // CROPS
         // BELLPEPPER CROP
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BELLPEPPER_CROP.get())

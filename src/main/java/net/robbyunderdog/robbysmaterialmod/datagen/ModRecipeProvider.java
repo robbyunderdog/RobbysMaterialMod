@@ -30,7 +30,7 @@ public class ModRecipeProvider extends RecipeProvider {
         List<ItemLike> LEAD_SMELTABLES = List.of(ModItems.RAW_LEAD.get(), ModBlocks.LEAD_ORE.get(), ModBlocks.LEAD_DEEPSLATE_ORE.get());
 
 
-    // BLOCKS
+    // TITANIUM BLOCKS
             // TITANIUM BLOCK
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITANIUM_BLOCK.get())
                 .pattern("AAA")
@@ -70,6 +70,7 @@ public class ModRecipeProvider extends RecipeProvider {
         trapdoorBuilder(ModBlocks.TITANIUM_TRAPDOOR.get(), Ingredient.of(ModItems.TITANIUM_INGOT.get())).group("titanium")
                 .unlockedBy(getHasName(ModItems.TITANIUM_INGOT.get()), has(ModItems.TITANIUM_INGOT.get())).save(pRecipeOutput);
 
+    // LEAD BLOCKS
             // LEAD BLOCK
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_BLOCK.get())
                 .pattern("AAA")
@@ -85,6 +86,23 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.RAW_LEAD.get())
                 .unlockedBy(getHasName(ModItems.RAW_LEAD.get()), has(ModItems.RAW_LEAD.get())).save(pRecipeOutput);
 
+    // WALNUT BLOCKS
+        // WALNUT WOOD
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WALNUT_WOOD.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModBlocks.WALNUT_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.WALNUT_LOG.get()), has(ModBlocks.WALNUT_LOG.get())).save(pRecipeOutput);
+        // STRIPPED WALNUT WOOD
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_WALNUT_WOOD.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModBlocks.STRIPPED_WALNUT_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_WALNUT_LOG.get()), has(ModBlocks.STRIPPED_WALNUT_LOG.get())).save(pRecipeOutput);
+        // WALNUT PLANKS
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WALNUT_PLANKS.get(), 4)
+                .requires(Ingredient.of(ModBlocks.WALNUT_LOG.get(), ModBlocks.STRIPPED_WALNUT_LOG.get(), ModBlocks.WALNUT_WOOD.get(), ModBlocks.STRIPPED_WALNUT_WOOD.get()))
+                .unlockedBy(getHasName(ModBlocks.WALNUT_LOG.get()), has(ModBlocks.WALNUT_LOG.get())).save(pRecipeOutput);
 
     // FUEL
             // ORGANIC FUEL

@@ -62,13 +62,37 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LEAD_BLOCK);
 
 
+        // WALNUT BLOCKS
+        logBlock(ModBlocks.WALNUT_LOG.get());
+        axisBlock(ModBlocks.WALNUT_WOOD.get(), blockTexture(ModBlocks.WALNUT_LOG.get()), blockTexture(ModBlocks.WALNUT_LOG.get()));
+        logBlock(ModBlocks.STRIPPED_WALNUT_LOG.get());
+        axisBlock(ModBlocks.STRIPPED_WALNUT_WOOD.get(), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()));
+
+        blockItem(ModBlocks.WALNUT_LOG);
+        blockItem(ModBlocks.WALNUT_WOOD);
+        blockItem(ModBlocks.STRIPPED_WALNUT_LOG);
+        blockItem(ModBlocks.STRIPPED_WALNUT_WOOD);
+
+        blockWithItem(ModBlocks.WALNUT_PLANKS);
+
+        leavesBlock(ModBlocks.WALNUT_LEAVES);
+        saplingBlock(ModBlocks.WALNUT_SAPLING);
+
         // CROPS
         makeCrop(((CropBlock) ModBlocks.BELLPEPPER_CROP.get()), "bellpepper_crop_stage", "bellpepper_crop_stage");
         makeBush(((SweetBerryBushBlock) ModBlocks.BLUEBERRY_BUSH.get()), "blueberry_bush_stage", "blueberry_bush_stage");
     }
 
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
 
-
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
@@ -95,10 +119,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         return models;
     }
-
-
-
-
 
     private void customLamp(RegistryObject<? extends Block> blockRegistryObject) {
         getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {

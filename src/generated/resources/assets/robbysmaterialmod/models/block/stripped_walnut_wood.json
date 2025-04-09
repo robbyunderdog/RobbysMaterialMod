@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "robbysmaterialmod:block/stripped_walnut_log",
+    "side": "robbysmaterialmod:block/stripped_walnut_log"
+  }
+}

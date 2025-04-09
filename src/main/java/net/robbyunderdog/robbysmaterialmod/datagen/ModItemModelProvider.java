@@ -87,9 +87,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.TITANIUM_FENCE, ModBlocks.TITANIUM_BLOCK);
         wallItem(ModBlocks.TITANIUM_WALL, ModBlocks.TITANIUM_BLOCK);
         simpleBlockItem(ModBlocks.TITANIUM_DOOR);
+
+        // WALNUT BLOCKS
+        saplingItem(ModBlocks.WALNUT_SAPLING);
     }
 
-
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(RobbysMaterialMod.MOD_ID, "block/" + item.getId().getPath()));
+    }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = RobbysMaterialMod.MOD_ID;

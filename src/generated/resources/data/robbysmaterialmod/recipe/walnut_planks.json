@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    [
+      {
+        "item": "robbysmaterialmod:walnut_log"
+      },
+      {
+        "item": "robbysmaterialmod:stripped_walnut_log"
+      },
+      {
+        "item": "robbysmaterialmod:walnut_wood"
+      },
+      {
+        "item": "robbysmaterialmod:stripped_walnut_wood"
+      }
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "id": "robbysmaterialmod:walnut_planks"
+  }
+}
