@@ -1,4 +1,7 @@
-// 1.21	2025-04-08T00:13:05.8189433	Registries
+// 1.21	2025-04-09T13:13:06.825955	Registries
 a867bdb3a4259e9da2fa471f4b4245dca5297350 data/robbysmaterialmod/enchantment/lightning_striker.json
+5b45ad64ccd9e437a818ecdb3567184afb104db4 data/robbysmaterialmod/forge/biome_modifier/add_titanium_ore.json
 895f128d6cb0d00cb844dda3730582010759b280 data/robbysmaterialmod/trim_material/titanium.json
 fe0125955136c620adb461f47a92ec05546dfa38 data/robbysmaterialmod/trim_pattern/lightweight.json
+d44879bfa6c5c0df2d30f970705706e007e60f1f data/robbysmaterialmod/worldgen/configured_feature/titanium_ore.json
+14a2394c04afb6990135208341bc9ce54f0bfef6 data/robbysmaterialmod/worldgen/placed_feature/titanium_ore_placed.json
