@@ -58,6 +58,9 @@ public class ModCreativeModeTabs {
                         // MUSIC DISCS
                         output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
+                        // SPAWN EGGS
+                        output.accept(ModItems.TRICERATOPS_SPAWN_EGG.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ROBBYSMATERIAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("robbysmaterial_blocks_tab",

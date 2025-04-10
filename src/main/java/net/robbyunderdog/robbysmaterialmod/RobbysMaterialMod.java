@@ -1,6 +1,7 @@
 package net.robbyunderdog.robbysmaterialmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,6 +19,8 @@ import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
 import net.robbyunderdog.robbysmaterialmod.component.ModDataComponentTypes;
 import net.robbyunderdog.robbysmaterialmod.effect.ModEffects;
 import net.robbyunderdog.robbysmaterialmod.enchantment.ModEnchantmentEffects;
+import net.robbyunderdog.robbysmaterialmod.entity.ModEntities;
+import net.robbyunderdog.robbysmaterialmod.entity.client.TriceratopsRenderer;
 import net.robbyunderdog.robbysmaterialmod.item.ModCreativeModeTabs;
 import net.robbyunderdog.robbysmaterialmod.item.ModItems;
 import net.robbyunderdog.robbysmaterialmod.potion.ModPotions;
@@ -52,6 +55,7 @@ public class RobbysMaterialMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -83,6 +87,8 @@ public class RobbysMaterialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.TRICERATOPS.get(), TriceratopsRenderer::new);
         }
     }
 }

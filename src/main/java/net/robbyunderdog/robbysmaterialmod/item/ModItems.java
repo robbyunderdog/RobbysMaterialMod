@@ -2,12 +2,14 @@ package net.robbyunderdog.robbysmaterialmod.item;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.robbyunderdog.robbysmaterialmod.RobbysMaterialMod;
 import net.robbyunderdog.robbysmaterialmod.block.ModBlocks;
+import net.robbyunderdog.robbysmaterialmod.entity.ModEntities;
 import net.robbyunderdog.robbysmaterialmod.item.custom.ChiselItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.FuelItem;
 import net.robbyunderdog.robbysmaterialmod.item.custom.HammerItem;
@@ -106,6 +108,10 @@ public class ModItems {
                     .attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 3, -2.4f))));
     public static final RegistryObject<Item> TITANIUM_BOW =ITEMS.register("titanium_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+    // SPAWN EGGS
+    public static final RegistryObject<Item> TRICERATOPS_SPAWN_EGG = ITEMS.register("triceratops_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TRICERATOPS, 0x53524b, 0xdac754, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

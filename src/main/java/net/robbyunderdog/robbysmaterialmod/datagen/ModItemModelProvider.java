@@ -90,6 +90,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // WALNUT BLOCKS
         saplingItem(ModBlocks.WALNUT_SAPLING);
+
+        // SPAWN EGGS
+        withExistingParent(ModItems.TRICERATOPS_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
