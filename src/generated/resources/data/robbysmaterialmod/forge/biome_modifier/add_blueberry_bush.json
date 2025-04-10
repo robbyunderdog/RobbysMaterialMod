@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:taiga",
+    "minecraft:snowy_taiga",
+    "minecraft:dark_forest"
+  ],
+  "features": "robbysmaterialmod:blueberry_bush_placed",
+  "step": "vegetal_decoration"
+}
